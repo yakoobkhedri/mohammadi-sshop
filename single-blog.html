@@ -1,0 +1,1330 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link href="assets/css/swiper.min.css">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link rel='stylesheet' type='text/css' media='screen' href='assets/css/styles.css'>
+    <title>جزئیات بلاگ</title>
+</head>
+
+<body class="bg-desk">
+
+    <!-- search Modal -->
+    <div class="modal fade" id="search" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-6 main-text font-bold" id="staticBackdropLabel">جستجو</h1>
+                    <button type="button" class="btn-close me-auto ms-0 w-16" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-sm-5 p-3">
+                    <form>
+                        <div
+                            class="d-flex rounded-3 border shadow-sm align-items-center px-2 justify-content-between">
+                            <input type="search" class="flex-grow-1 bg-transparent border-0 outline-none py-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="20" width="20" fill="none" class="cursor"
+                                viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+                            </svg>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- login Modal -->
+    <div class="modal fade" id="login" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-6 main-text font-bold" id="staticBackdropLabel">ورود به سایت</h1>
+                    <button type="button" class="btn-close me-auto ms-0 w-16" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-sm-5 p-3">
+                    <form>
+                        <div>
+                            <label class="text-secondary font-bold">نام کاربری <span
+                                    class="text-danger">*</span></label>
+                            <input class="form-control rounded-3 mt-3 bg-gray">
+                        </div>
+                        <div class="mt-4">
+                            <label class="text-secondary font-bold">رمز عبور<span class="text-danger">*</span></label>
+                            <input class="form-control rounded-3 mt-3 bg-gray">
+                        </div>
+                        <label class="fs-7 text-secondary font-bold mt-3 cursor d-block">
+                            <input type="checkbox" class="form-check-input ms-1">
+                            مرا به خاطر بسپار
+                        </label>
+                        <input type="submit" value="ورود"
+                            class="main-bg rounded-3 border-0 overflow-hidden py-2 font-bold mt-3 mb-2 text-white w-100">
+                        <a class="fs-7 main-text font-bold">رمز عبور خود را گم کرده اید؟</a>
+                        <p class="mb-0 fs-7 mt-3">حساب کاربری ندارید؟ <a href="register.html"
+                                class="main-text font-bold">ثبت نام</a></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<<<<<<< HEAD
+        <!-- category modal -->
+
+        <div class="offcanvas offcanvas-start w-240 d-md-none" tabindex="-1" id="offcanvasExample"
+        aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+            <h6 class="offcanvas-title main-text font-bold" id="offcanvasExampleLabel">دسته بندی</h6>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body px-0">
+            <ul class="m-0 list-unstyled menu p-0">
+                <li class="dropdownMenu mb-3 border-bottom">
+                    <a class="d-flex align-items-center px-3 text-dark font-bold justify-content-between">
+                        <span>لوله فلزی</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                            class="bi bi-chevron-down transition" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                        </svg>
+                    </a>
+                    <ul class="m-0 px-3 list-unstyled main-bg mt-3">
+                        <li class="pt-3">
+                            <a class="d-block border-bottom text-warning font-bold">شیرآلات چدنی و موتورخانه</a>
+                            <ul>
+                                <li>
+                                    <a class="d-block py-3 text-white">شیر فلکه کشویی
+                                    </a>
+                                </li>
+                                <li class=""><a class="d-block py-3 text-white">شیر سوپاپی</a></li>
+                                <li class=""><a class="d-block py-3 text-white">شیر یک طرفه</a></li>
+                                <li class=""><a class="d-block py-3 text-white">شیر صافی چدنی</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="d-block border-bottom text-warning font-bold">شیرآلات استیل</a>
+                            <ul>
+                                <li>
+                                    <a class="d-block py-3 text-white">شیر فلکه کشویی
+                                    </a>
+                                </li>
+                                <li class=""><a class="d-block py-3 text-white">شیر سوپاپی</a></li>
+                                <li class=""><a class="d-block py-3 text-white">شیر یک طرفه</a></li>
+                                <li class=""><a class="d-block py-3 text-white">شیر صافی چدنی</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="d-block border-bottom text-warning font-bold">شیرآلات چشمی</a>
+                            <ul>
+                                <li>
+                                    <a class="d-block py-3 text-white">شیر فلکه کشویی
+                                    </a>
+                                </li>
+                                <li class=""><a class="d-block py-3 text-white">شیر سوپاپی</a></li>
+                                <li class=""><a class="d-block py-3 text-white">شیر یک طرفه</a></li>
+                                <li class=""><a class="d-block py-3 text-white">شیر صافی چدنی</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="d-block border-bottom text-warning font-bold">شیرآلات اهرمی</a>
+                            <ul>
+                                <li>
+                                    <a class="d-block py-3 text-white">شیر فلکه کشویی
+                                    </a>
+                                </li>
+                                <li class=""><a class="d-block py-3 text-white">شیر سوپاپی</a></li>
+                                <li class=""><a class="d-block py-3 text-white">شیر یک طرفه</a></li>
+                                <li class=""><a class="d-block py-3 text-white">شیر صافی چدنی</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="d-block border-bottom text-warning font-bold">شیرآلات مدل</a>
+                            <ul>
+                                <li>
+                                    <a class="d-block py-3 text-white">شیر فلکه کشویی
+                                    </a>
+                                </li>
+                                <li class=""><a class="d-block py-3 text-white">شیر سوپاپی</a></li>
+                                <li class=""><a class="d-block py-3 text-white">شیر یک طرفه</a></li>
+                                <li class=""><a class="d-block py-3 text-white">شیر صافی چدنی</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdownMenu mb-3 border-bottom">
+                    <a class="d-flex align-items-center px-3 text-dark font-bold justify-content-between">
+                        <span>اتصالات فلزی</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                            class="bi bi-chevron-down transition" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                        </svg>
+                    </a>
+                    <ul class="m-0 px-3 list-unstyled main-bg mt-3">
+                        <li class="pt-3">
+                            <a class="d-block border-bottom text-warning font-bold">شیرآلات چدنی و موتورخانه</a>
+                            <ul>
+                                <li>
+                                    <a class="d-block py-3 text-white">شیر فلکه کشویی
+                                    </a>
+                                </li>
+                                <li class=""><a class="d-block py-3 text-white">شیر سوپاپی</a></li>
+                                <li class=""><a class="d-block py-3 text-white">شیر یک طرفه</a></li>
+                                <li class=""><a class="d-block py-3 text-white">شیر صافی چدنی</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="d-block border-bottom text-warning font-bold">شیرآلات استیل</a>
+                            <ul>
+                                <li>
+                                    <a class="d-block py-3 text-white">شیر فلکه کشویی
+                                    </a>
+                                </li>
+                                <li class=""><a class="d-block py-3 text-white">شیر سوپاپی</a></li>
+                                <li class=""><a class="d-block py-3 text-white">شیر یک طرفه</a></li>
+                                <li class=""><a class="d-block py-3 text-white">شیر صافی چدنی</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="d-block border-bottom text-warning font-bold">شیرآلات چشمی</a>
+                            <ul>
+                                <li>
+                                    <a class="d-block py-3 text-white">شیر فلکه کشویی
+                                    </a>
+                                </li>
+                                <li class=""><a class="d-block py-3 text-white">شیر سوپاپی</a></li>
+                                <li class=""><a class="d-block py-3 text-white">شیر یک طرفه</a></li>
+                                <li class=""><a class="d-block py-3 text-white">شیر صافی چدنی</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="d-block border-bottom text-warning font-bold">شیرآلات اهرمی</a>
+                            <ul>
+                                <li>
+                                    <a class="d-block py-3 text-white">شیر فلکه کشویی
+                                    </a>
+                                </li>
+                                <li class=""><a class="d-block py-3 text-white">شیر سوپاپی</a></li>
+                                <li class=""><a class="d-block py-3 text-white">شیر یک طرفه</a></li>
+                                <li class=""><a class="d-block py-3 text-white">شیر صافی چدنی</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="d-block border-bottom text-warning font-bold">شیرآلات مدل</a>
+                            <ul>
+                                <li>
+                                    <a class="d-block py-3 text-white">شیر فلکه کشویی
+                                    </a>
+                                </li>
+                                <li class=""><a class="d-block py-3 text-white">شیر سوپاپی</a></li>
+                                <li class=""><a class="d-block py-3 text-white">شیر یک طرفه</a></li>
+                                <li class=""><a class="d-block py-3 text-white">شیر صافی چدنی</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdownMenu mb-3 border-bottom">
+                    <a class="d-flex align-items-center px-3 text-dark font-bold justify-content-between">
+                        <span>شیرآلات صنعتی</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                            class="bi bi-chevron-down transition" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                        </svg>
+                    </a>
+                    <ul class="m-0 px-3 list-unstyled main-bg mt-3">
+                        <li class="pt-3">
+                            <a class="d-block border-bottom text-warning font-bold">شیرآلات چدنی و موتورخانه</a>
+                            <ul>
+                                <li>
+                                    <a class="d-block py-3 text-white">شیر فلکه کشویی
+                                    </a>
+                                </li>
+                                <li class=""><a class="d-block py-3 text-white">شیر سوپاپی</a></li>
+                                <li class=""><a class="d-block py-3 text-white">شیر یک طرفه</a></li>
+                                <li class=""><a class="d-block py-3 text-white">شیر صافی چدنی</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="d-block border-bottom text-warning font-bold">شیرآلات استیل</a>
+                            <ul>
+                                <li>
+                                    <a class="d-block py-3 text-white">شیر فلکه کشویی
+                                    </a>
+                                </li>
+                                <li class=""><a class="d-block py-3 text-white">شیر سوپاپی</a></li>
+                                <li class=""><a class="d-block py-3 text-white">شیر یک طرفه</a></li>
+                                <li class=""><a class="d-block py-3 text-white">شیر صافی چدنی</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="d-block border-bottom text-warning font-bold">شیرآلات چشمی</a>
+                            <ul>
+                                <li>
+                                    <a class="d-block py-3 text-white">شیر فلکه کشویی
+                                    </a>
+                                </li>
+                                <li class=""><a class="d-block py-3 text-white">شیر سوپاپی</a></li>
+                                <li class=""><a class="d-block py-3 text-white">شیر یک طرفه</a></li>
+                                <li class=""><a class="d-block py-3 text-white">شیر صافی چدنی</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="d-block border-bottom text-warning font-bold">شیرآلات اهرمی</a>
+                            <ul>
+                                <li>
+                                    <a class="d-block py-3 text-white">شیر فلکه کشویی
+                                    </a>
+                                </li>
+                                <li class=""><a class="d-block py-3 text-white">شیر سوپاپی</a></li>
+                                <li class=""><a class="d-block py-3 text-white">شیر یک طرفه</a></li>
+                                <li class=""><a class="d-block py-3 text-white">شیر صافی چدنی</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="d-block border-bottom text-warning font-bold">شیرآلات مدل</a>
+                            <ul>
+                                <li>
+                                    <a class="d-block py-3 text-white">شیر فلکه کشویی
+                                    </a>
+                                </li>
+                                <li class=""><a class="d-block py-3 text-white">شیر سوپاپی</a></li>
+                                <li class=""><a class="d-block py-3 text-white">شیر یک طرفه</a></li>
+                                <li class=""><a class="d-block py-3 text-white">شیر صافی چدنی</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdownMenu mb-3 border-bottom">
+                    <a class="d-flex align-items-center px-3 text-dark font-bold justify-content-between">
+                        <span>عایق لوله</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                            class="bi bi-chevron-down transition" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                        </svg>
+                    </a>
+                    <ul class="m-0 px-3 list-unstyled main-bg mt-3">
+                        <li class="pt-3">
+                            <a class="d-block border-bottom text-warning font-bold">شیرآلات چدنی و موتورخانه</a>
+                            <ul>
+                                <li>
+                                    <a class="d-block py-3 text-white">شیر فلکه کشویی
+                                    </a>
+                                </li>
+                                <li class=""><a class="d-block py-3 text-white">شیر سوپاپی</a></li>
+                                <li class=""><a class="d-block py-3 text-white">شیر یک طرفه</a></li>
+                                <li class=""><a class="d-block py-3 text-white">شیر صافی چدنی</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="d-block border-bottom text-warning font-bold">شیرآلات استیل</a>
+                            <ul>
+                                <li>
+                                    <a class="d-block py-3 text-white">شیر فلکه کشویی
+                                    </a>
+                                </li>
+                                <li class=""><a class="d-block py-3 text-white">شیر سوپاپی</a></li>
+                                <li class=""><a class="d-block py-3 text-white">شیر یک طرفه</a></li>
+                                <li class=""><a class="d-block py-3 text-white">شیر صافی چدنی</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="d-block border-bottom text-warning font-bold">شیرآلات چشمی</a>
+                            <ul>
+                                <li>
+                                    <a class="d-block py-3 text-white">شیر فلکه کشویی
+                                    </a>
+                                </li>
+                                <li class=""><a class="d-block py-3 text-white">شیر سوپاپی</a></li>
+                                <li class=""><a class="d-block py-3 text-white">شیر یک طرفه</a></li>
+                                <li class=""><a class="d-block py-3 text-white">شیر صافی چدنی</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="d-block border-bottom text-warning font-bold">شیرآلات اهرمی</a>
+                            <ul>
+                                <li>
+                                    <a class="d-block py-3 text-white">شیر فلکه کشویی
+                                    </a>
+                                </li>
+                                <li class=""><a class="d-block py-3 text-white">شیر سوپاپی</a></li>
+                                <li class=""><a class="d-block py-3 text-white">شیر یک طرفه</a></li>
+                                <li class=""><a class="d-block py-3 text-white">شیر صافی چدنی</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="d-block border-bottom text-warning font-bold">شیرآلات مدل</a>
+                            <ul>
+                                <li>
+                                    <a class="d-block py-3 text-white">شیر فلکه کشویی
+                                    </a>
+                                </li>
+                                <li class=""><a class="d-block py-3 text-white">شیر سوپاپی</a></li>
+                                <li class=""><a class="d-block py-3 text-white">شیر یک طرفه</a></li>
+                                <li class=""><a class="d-block py-3 text-white">شیر صافی چدنی</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdownMenu mb-3 border-bottom">
+                    <a class="d-flex align-items-center px-3 text-dark font-bold justify-content-between">
+                        <span>فلنج و اتصالات</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                            class="bi bi-chevron-down transition" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                        </svg>
+                    </a>
+                    <ul class="m-0 px-3 list-unstyled main-bg mt-3">
+                        <li class="pt-3">
+                            <a class="d-block border-bottom text-warning font-bold">شیرآلات چدنی و موتورخانه</a>
+                            <ul>
+                                <li>
+                                    <a class="d-block py-3 text-white">شیر فلکه کشویی
+                                    </a>
+                                </li>
+                                <li class=""><a class="d-block py-3 text-white">شیر سوپاپی</a></li>
+                                <li class=""><a class="d-block py-3 text-white">شیر یک طرفه</a></li>
+                                <li class=""><a class="d-block py-3 text-white">شیر صافی چدنی</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="d-block border-bottom text-warning font-bold">شیرآلات استیل</a>
+                            <ul>
+                                <li>
+                                    <a class="d-block py-3 text-white">شیر فلکه کشویی
+                                    </a>
+                                </li>
+                                <li class=""><a class="d-block py-3 text-white">شیر سوپاپی</a></li>
+                                <li class=""><a class="d-block py-3 text-white">شیر یک طرفه</a></li>
+                                <li class=""><a class="d-block py-3 text-white">شیر صافی چدنی</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="d-block border-bottom text-warning font-bold">شیرآلات چشمی</a>
+                            <ul>
+                                <li>
+                                    <a class="d-block py-3 text-white">شیر فلکه کشویی
+                                    </a>
+                                </li>
+                                <li class=""><a class="d-block py-3 text-white">شیر سوپاپی</a></li>
+                                <li class=""><a class="d-block py-3 text-white">شیر یک طرفه</a></li>
+                                <li class=""><a class="d-block py-3 text-white">شیر صافی چدنی</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="d-block border-bottom text-warning font-bold">شیرآلات اهرمی</a>
+                            <ul>
+                                <li>
+                                    <a class="d-block py-3 text-white">شیر فلکه کشویی
+                                    </a>
+                                </li>
+                                <li class=""><a class="d-block py-3 text-white">شیر سوپاپی</a></li>
+                                <li class=""><a class="d-block py-3 text-white">شیر یک طرفه</a></li>
+                                <li class=""><a class="d-block py-3 text-white">شیر صافی چدنی</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="d-block border-bottom text-warning font-bold">شیرآلات مدل</a>
+                            <ul>
+                                <li>
+                                    <a class="d-block py-3 text-white">شیر فلکه کشویی
+                                    </a>
+                                </li>
+                                <li class=""><a class="d-block py-3 text-white">شیر سوپاپی</a></li>
+                                <li class=""><a class="d-block py-3 text-white">شیر یک طرفه</a></li>
+                                <li class=""><a class="d-block py-3 text-white">شیر صافی چدنی</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+=======
+>>>>>>> e20248e63e0692c3816d5ae3afa88923a12dbe02
+
+    <!-- header -->
+
+    <header id="header" class="py-3 shadow-sm position-relative z-10 loading">
+        <div class="container">
+            <div class="d-flex align-items-center justify-content-between">
+                <!-- hamburger icon -->
+                <svg id="hamIcon" xmlns="http://www.w3.org/2000/svg" width="33" height="33" fill="currentColor"
+                    class="bi bi-list d-md-none cursor" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                </svg>
+                <!-- logo -->
+                <a class="d-flex align-items-center gap-2 second-text fs-7">
+                    <img alt="logo" src="assets/img/logo.png" class="img-fluid">
+                    <p class="mb-0 font-bold d-none d-md-block">فروشگاه برادران محمدی</p>
+                </a>
+                <!-- search && login -->
+                <div class="d-flex align-items-center gap-3">
+                    <div data-bs-toggle="modal" data-bs-target="#search"
+                        class="rounded-circle cursor shadow-sm w-33 h-33 d-md-flex d-none align-items-center justify-content-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="20" width="20" fill="none" viewBox="0 0 24 24"
+                            stroke-width="1.5" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+                        </svg>
+                    </div>
+                    <a data-bs-toggle="modal" data-bs-target="#login"
+                        class="rounded-pill text-secondary cursor font-bold py-md-1 py-1 fs-7 px-md-3 px-1 d-flex align-items-center shadow-sm justify-content-center gap-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="none" viewBox="0 0 24 24"
+                            stroke-width="1.5" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M17.982 18.725A7.488 7.488 0 0012 15.75a7.488 7.488 0 00-5.982 2.975m11.963 0a9 9 0 10-11.963 0m11.963 0A8.966 8.966 0 0112 21a8.966 8.966 0 01-5.982-2.275M15 9.75a3 3 0 11-6 0 3 3 0 016 0z" />
+                        </svg>
+                        <span class="d-none d-md-block">ورود و عضویت</span>
+                    </a>
+                </div>
+                <!-- mobile navbar -->
+                <div
+                    class="position-fixed fs-7 z-10 text-center font-bold bottom-0 end-0 start-0 bg-white py-4 shadow d-md-none">
+                    <div class="container d-flex align-items-center justify-content-between">
+                        <a class="d-block text-secondary" data-bs-toggle="offcanvas" href="#offcanvasExample"
+                            role="button" aria-controls="offcanvasExample">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="33" height="33" fill="currentColor"
+                                class="bi bi-grid" viewBox="0 0 16 16">
+                                <path
+                                    d="M1 2.5A1.5 1.5 0 0 1 2.5 1h3A1.5 1.5 0 0 1 7 2.5v3A1.5 1.5 0 0 1 5.5 7h-3A1.5 1.5 0 0 1 1 5.5v-3zM2.5 2a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zm6.5.5A1.5 1.5 0 0 1 10.5 1h3A1.5 1.5 0 0 1 15 2.5v3A1.5 1.5 0 0 1 13.5 7h-3A1.5 1.5 0 0 1 9 5.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zM1 10.5A1.5 1.5 0 0 1 2.5 9h3A1.5 1.5 0 0 1 7 10.5v3A1.5 1.5 0 0 1 5.5 15h-3A1.5 1.5 0 0 1 1 13.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zm6.5.5A1.5 1.5 0 0 1 10.5 9h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 13.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3z">
+                                </path>
+                            </svg>
+                            <p class="mb-0 mt-2">دسته بندی</p>
+                        </a>
+                        <a class="d-block text-secondary">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="none"
+                                viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M17.982 18.725A7.488 7.488 0 0012 15.75a7.488 7.488 0 00-5.982 2.975m11.963 0a9 9 0 10-11.963 0m11.963 0A8.966 8.966 0 0112 21a8.966 8.966 0 01-5.982-2.275M15 9.75a3 3 0 11-6 0 3 3 0 016 0z" />
+                            </svg>
+
+                            <p class="mb-0 mt-2">حساب کاربری من</p>
+                        </a>
+                        <a class="d-block text-secondary">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="none"
+                                viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+                            </svg>
+                            <p class="mb-0 mt-2">خانه</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- navbar -->
+            <div class="d-flex align-items-center justify-content-between mt-2">
+                <!-- overlay -->
+                <div id="overlay"></div>
+                <!-- nav -->
+                <nav>
+                    <!-- menu -->
+                    <ul
+                        class="list-unstyled p-md-0 p-3 m-0 d-flex flex-column flex-md-row align-items-md-center gap-4 fs-7 font-bold">
+                        <li
+                            class="d-flex rounded-3 d-md-none shadow-sm align-items-center px-2 justify-content-between">
+                            <input class="flex-grow-1 bg-transparent border-0 outline-none py-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="20" width="20" fill="none"
+                                viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+                            </svg>
+                        </li>
+                        <li class="d-none d-md-block position-relative cat-item">
+                            <a class="d-flex align-items-center gap-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-grid" viewBox="0 0 16 16">
+                                    <path
+                                        d="M1 2.5A1.5 1.5 0 0 1 2.5 1h3A1.5 1.5 0 0 1 7 2.5v3A1.5 1.5 0 0 1 5.5 7h-3A1.5 1.5 0 0 1 1 5.5v-3zM2.5 2a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zm6.5.5A1.5 1.5 0 0 1 10.5 1h3A1.5 1.5 0 0 1 15 2.5v3A1.5 1.5 0 0 1 13.5 7h-3A1.5 1.5 0 0 1 9 5.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zM1 10.5A1.5 1.5 0 0 1 2.5 9h3A1.5 1.5 0 0 1 7 10.5v3A1.5 1.5 0 0 1 5.5 15h-3A1.5 1.5 0 0 1 1 13.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zm6.5.5A1.5 1.5 0 0 1 10.5 9h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 13.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3z" />
+                                </svg>
+                                <span>دسته بندی</span>
+                            </a>
+                            <!-- dropdown -->
+                            <div
+                                class="container dropdown transition position-absolute end-0 start-0 rounded-4 bg-white overflow-hidden shadow">
+                                <div class="row h-100">
+                                    <div class="px-0 col-2 bg-gray">
+                                        <ul class="list-unstyled p-0 m-0 lh-lg text-dark mt-3">
+                                            <li class="py-3 cursor transition px-3 tab active" data-id="1">لوله فلزی
+                                            </li>
+                                            <li class="py-3 cursor transition px-3 tab" data-id="2">اتصالات فلزی</li>
+                                            <li class="py-3 cursor transition px-3 tab" data-id="3">شیرآلات صنعتی</li>
+                                            <li class="py-3 cursor transition px-3 tab" data-id="4">عایق لوله</li>
+                                            <li class="py-3 cursor transition px-3 tab" data-id="5">فلنج و اتصالات</li>
+                                        </ul>
+                                    </div>
+                                    <div class="px-0 col-10 overflow-y-custom h-100">
+                                        <div data-id="1" class="row tabContent first p-4 g-4">
+                                            <div class="col-xl-3 col-lg-4 col-6">
+                                                <h6 class="font-bold special-before">شیرآلات چدنی و موتورخانه</h6>
+                                                <ul class="m-0 p-0 list-unstyled lh-lg">
+                                                    <li class="py-1"><a class="text-secondary">شیر فلکه کشویی</a></li>
+                                                    <li class="py-1"><a class="text-secondary">شیر سوپاپی</a></li>
+                                                    <li class="py-1"><a class="text-secondary">شیر یک طرفه</a></li>
+                                                    <li class="py-1"><a class="text-secondary">شیر صافی چدنی</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-6">
+                                                <h6 class="font-bold special-before">شیرآلات استیل</h6>
+                                                <ul class="m-0 p-0 list-unstyled lh-lg">
+                                                    <li class="py-1"><a class="text-secondary">شیر فلکه کشویی</a></li>
+                                                    <li class="py-1"><a class="text-secondary">شیر سوپاپی</a></li>
+                                                    <li class="py-1"><a class="text-secondary">شیر یک طرفه</a></li>
+                                                    <li class="py-1"><a class="text-secondary">شیر صافی چدنی</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-6">
+                                                <h6 class="font-bold special-before">شیرآلات چشمی</h6>
+                                                <ul class="m-0 p-0 list-unstyled lh-lg">
+                                                    <li class="py-1"><a class="text-secondary">شیر فلکه کشویی</a></li>
+                                                    <li class="py-1"><a class="text-secondary">شیر سوپاپی</a></li>
+                                                    <li class="py-1"><a class="text-secondary">شیر یک طرفه</a></li>
+                                                    <li class="py-1"><a class="text-secondary">شیر صافی چدنی</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-6">
+                                                <h6 class="font-bold special-before">شیرآلات اهرمی</h6>
+                                                <ul class="m-0 p-0 list-unstyled lh-lg">
+                                                    <li class="py-1"><a class="text-secondary">شیر فلکه کشویی</a></li>
+                                                    <li class="py-1"><a class="text-secondary">شیر سوپاپی</a></li>
+                                                    <li class="py-1"><a class="text-secondary">شیر یک طرفه</a></li>
+                                                    <li class="py-1"><a class="text-secondary">شیر صافی چدنی</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-6">
+                                                <h6 class="font-bold special-before">شیرآلات مدل</h6>
+                                                <ul class="m-0 p-0 list-unstyled lh-lg">
+                                                    <li class="py-1"><a class="text-secondary">شیر فلکه کشویی</a></li>
+                                                    <li class="py-1"><a class="text-secondary">شیر سوپاپی</a></li>
+                                                    <li class="py-1"><a class="text-secondary">شیر یک طرفه</a></li>
+                                                    <li class="py-1"><a class="text-secondary">شیر صافی چدنی</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div data-id="2" class="row tabContent p-4 g-4">
+                                            <div class="col-xl-3 col-lg-4 col-6">
+                                                <h6 class="font-bold special-before">شیرآلات چدنی و موتورخانه</h6>
+                                                <ul class="m-0 p-0 list-unstyled lh-lg">
+                                                    <li class="py-1"><a class="text-secondary">شیر فلکه کشویی</a></li>
+                                                    <li class="py-1"><a class="text-secondary">شیر سوپاپی</a></li>
+                                                    <li class="py-1"><a class="text-secondary">شیر یک طرفه</a></li>
+                                                    <li class="py-1"><a class="text-secondary">شیر صافی چدنی</a></li>
+                                                    <li class="py-1"><a class="text-secondary">شیر اهرمی</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-6">
+                                                <h6 class="font-bold special-before">شیرآلات استیل</h6>
+                                                <ul class="m-0 p-0 list-unstyled lh-lg">
+                                                    <li class="py-1"><a class="text-secondary">شیر فلکه کشویی</a></li>
+                                                    <li class="py-1"><a class="text-secondary">شیر سوپاپی</a></li>
+                                                    <li class="py-1"><a class="text-secondary">شیر یک طرفه</a></li>
+                                                    <li class="py-1"><a class="text-secondary">شیر صافی چدنی</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-6">
+                                                <h6 class="font-bold special-before">شیرآلات چشمی</h6>
+                                                <ul class="m-0 p-0 list-unstyled lh-lg">
+                                                    <li class="py-1"><a class="text-secondary">شیر فلکه کشویی</a></li>
+                                                    <li class="py-1"><a class="text-secondary">شیر سوپاپی</a></li>
+                                                    <li class="py-1"><a class="text-secondary">شیر یک طرفه</a></li>
+                                                    <li class="py-1"><a class="text-secondary">شیر صافی چدنی</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-6">
+                                                <h6 class="font-bold special-before">شیرآلات اهرمی</h6>
+                                                <ul class="m-0 p-0 list-unstyled lh-lg">
+                                                    <li class="py-1"><a class="text-secondary">شیر فلکه کشویی</a></li>
+                                                    <li class="py-1"><a class="text-secondary">شیر سوپاپی</a></li>
+                                                    <li class="py-1"><a class="text-secondary">شیر یک طرفه</a></li>
+                                                    <li class="py-1"><a class="text-secondary">شیر صافی چدنی</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-6">
+                                                <h6 class="font-bold special-before">شیرآلات مدل</h6>
+                                                <ul class="m-0 p-0 list-unstyled lh-lg">
+                                                    <li class="py-1"><a class="text-secondary">شیر فلکه کشویی</a></li>
+                                                    <li class="py-1"><a class="text-secondary">شیر سوپاپی</a></li>
+                                                    <li class="py-1"><a class="text-secondary">شیر یک طرفه</a></li>
+                                                    <li class="py-1"><a class="text-secondary">شیر صافی چدنی</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-6">
+                                                <h6 class="font-bold special-before">شیرآلات چشمی</h6>
+                                                <ul class="m-0 p-0 list-unstyled lh-lg">
+                                                    <li class="py-1"><a class="text-secondary">شیر فلکه کشویی</a></li>
+                                                    <li class="py-1"><a class="text-secondary">شیر سوپاپی</a></li>
+                                                    <li class="py-1"><a class="text-secondary">شیر یک طرفه</a></li>
+                                                    <li class="py-1"><a class="text-secondary">شیر صافی چدنی</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div data-id="3" class="row tabContent p-4 g-4">
+                                            <div class="col-xl-3 col-lg-4 col-6">
+                                                <h6 class="font-bold special-before">شیرآلات چدنی و موتورخانه</h6>
+                                                <ul class="m-0 p-0 list-unstyled lh-lg">
+                                                    <li class="py-1"><a class="text-secondary">شیر فلکه کشویی</a></li>
+                                                    <li class="py-1"><a class="text-secondary">شیر سوپاپی</a></li>
+                                                    <li class="py-1"><a class="text-secondary">شیر یک طرفه</a></li>
+                                                    <li class="py-1"><a class="text-secondary">شیر صافی چدنی</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-6">
+                                                <h6 class="font-bold special-before">شیرآلات استیل</h6>
+                                                <ul class="m-0 p-0 list-unstyled lh-lg">
+                                                    <li class="py-1"><a class="text-secondary">شیر فلکه کشویی</a></li>
+                                                    <li class="py-1"><a class="text-secondary">شیر سوپاپی</a></li>
+                                                    <li class="py-1"><a class="text-secondary">شیر یک طرفه</a></li>
+                                                    <li class="py-1"><a class="text-secondary">شیر صافی چدنی</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-6">
+                                                <h6 class="font-bold special-before">شیرآلات چدنی و موتورخانه</h6>
+                                                <ul class="m-0 p-0 list-unstyled lh-lg">
+                                                    <li class="py-1"><a class="text-secondary">شیر فلکه کشویی</a></li>
+                                                    <li class="py-1"><a class="text-secondary">شیر سوپاپی</a></li>
+                                                    <li class="py-1"><a class="text-secondary">شیر یک طرفه</a></li>
+                                                    <li class="py-1"><a class="text-secondary">شیر صافی چدنی</a></li>
+                                                    <li class="py-1"><a class="text-secondary">شیر اهرمی</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-6">
+                                                <h6 class="font-bold special-before">شیرآلات چشمی</h6>
+                                                <ul class="m-0 p-0 list-unstyled lh-lg">
+                                                    <li class="py-1"><a class="text-secondary">شیر فلکه کشویی</a></li>
+                                                    <li class="py-1"><a class="text-secondary">شیر سوپاپی</a></li>
+                                                    <li class="py-1"><a class="text-secondary">شیر یک طرفه</a></li>
+                                                    <li class="py-1"><a class="text-secondary">شیر صافی چدنی</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-6">
+                                                <h6 class="font-bold special-before">شیرآلات اهرمی</h6>
+                                                <ul class="m-0 p-0 list-unstyled lh-lg">
+                                                    <li class="py-1"><a class="text-secondary">شیر فلکه کشویی</a></li>
+                                                    <li class="py-1"><a class="text-secondary">شیر سوپاپی</a></li>
+                                                    <li class="py-1"><a class="text-secondary">شیر یک طرفه</a></li>
+                                                    <li class="py-1"><a class="text-secondary">شیر صافی چدنی</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-6">
+                                                <h6 class="font-bold special-before">شیرآلات مدل</h6>
+                                                <ul class="m-0 p-0 list-unstyled lh-lg">
+                                                    <li class="py-1"><a class="text-secondary">شیر فلکه کشویی</a></li>
+                                                    <li class="py-1"><a class="text-secondary">شیر سوپاپی</a></li>
+                                                    <li class="py-1"><a class="text-secondary">شیر یک طرفه</a></li>
+                                                    <li class="py-1"><a class="text-secondary">شیر صافی چدنی</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div data-id="4" class="row tabContent p-4 g-4">
+                                            <div class="col-xl-3 col-lg-4 col-6">
+                                                <h6 class="font-bold special-before">شیرآلات چدنی و موتورخانه</h6>
+                                                <ul class="m-0 p-0 list-unstyled lh-lg">
+                                                    <li class="py-1"><a class="text-secondary">شیر فلکه کشویی</a></li>
+                                                    <li class="py-1"><a class="text-secondary">شیر سوپاپی</a></li>
+                                                    <li class="py-1"><a class="text-secondary">شیر یک طرفه</a></li>
+                                                    <li class="py-1"><a class="text-secondary">شیر صافی چدنی</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-6">
+                                                <h6 class="font-bold special-before">شیرآلات استیل</h6>
+                                                <ul class="m-0 p-0 list-unstyled lh-lg">
+                                                    <li class="py-1"><a class="text-secondary">شیر فلکه کشویی</a></li>
+                                                    <li class="py-1"><a class="text-secondary">شیر سوپاپی</a></li>
+                                                    <li class="py-1"><a class="text-secondary">شیر یک طرفه</a></li>
+                                                    <li class="py-1"><a class="text-secondary">شیر صافی چدنی</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-6">
+                                                <h6 class="font-bold special-before">شیرآلات چشمی</h6>
+                                                <ul class="m-0 p-0 list-unstyled lh-lg">
+                                                    <li class="py-1"><a class="text-secondary">شیر فلکه کشویی</a></li>
+                                                    <li class="py-1"><a class="text-secondary">شیر سوپاپی</a></li>
+                                                    <li class="py-1"><a class="text-secondary">شیر یک طرفه</a></li>
+                                                    <li class="py-1"><a class="text-secondary">شیر صافی چدنی</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-6">
+                                                <h6 class="font-bold special-before">شیرآلات اهرمی</h6>
+                                                <ul class="m-0 p-0 list-unstyled lh-lg">
+                                                    <li class="py-1"><a class="text-secondary">شیر فلکه کشویی</a></li>
+                                                    <li class="py-1"><a class="text-secondary">شیر سوپاپی</a></li>
+                                                    <li class="py-1"><a class="text-secondary">شیر یک طرفه</a></li>
+                                                    <li class="py-1"><a class="text-secondary">شیر صافی چدنی</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-6">
+                                                <h6 class="font-bold special-before">شیرآلات مدل</h6>
+                                                <ul class="m-0 p-0 list-unstyled lh-lg">
+                                                    <li class="py-1"><a class="text-secondary">شیر فلکه کشویی</a></li>
+                                                    <li class="py-1"><a class="text-secondary">شیر سوپاپی</a></li>
+                                                    <li class="py-1"><a class="text-secondary">شیر یک طرفه</a></li>
+                                                    <li class="py-1"><a class="text-secondary">شیر صافی چدنی</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div data-id="5" class="row tabContent p-4 g-4">
+                                            <div class="col-xl-3 col-lg-4 col-6">
+                                                <h6 class="font-bold special-before">شیرآلات چدنی و موتورخانه</h6>
+                                                <ul class="m-0 p-0 list-unstyled lh-lg">
+                                                    <li class="py-1"><a class="text-secondary">شیر فلکه کشویی</a></li>
+                                                    <li class="py-1"><a class="text-secondary">شیر سوپاپی</a></li>
+                                                    <li class="py-1"><a class="text-secondary">شیر یک طرفه</a></li>
+                                                    <li class="py-1"><a class="text-secondary">شیر صافی چدنی</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-6">
+                                                <h6 class="font-bold special-before">شیرآلات استیل</h6>
+                                                <ul class="m-0 p-0 list-unstyled lh-lg">
+                                                    <li class="py-1"><a class="text-secondary">شیر فلکه کشویی</a></li>
+                                                    <li class="py-1"><a class="text-secondary">شیر سوپاپی</a></li>
+                                                    <li class="py-1"><a class="text-secondary">شیر یک طرفه</a></li>
+                                                    <li class="py-1"><a class="text-secondary">شیر صافی چدنی</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-6">
+                                                <h6 class="font-bold special-before">شیرآلات چدنی و موتورخانه</h6>
+                                                <ul class="m-0 p-0 list-unstyled lh-lg">
+                                                    <li class="py-1"><a class="text-secondary">شیر فلکه کشویی</a></li>
+                                                    <li class="py-1"><a class="text-secondary">شیر سوپاپی</a></li>
+                                                    <li class="py-1"><a class="text-secondary">شیر یک طرفه</a></li>
+                                                    <li class="py-1"><a class="text-secondary">شیر صافی چدنی</a></li>
+                                                    <li class="py-1"><a class="text-secondary">شیر اهرمی</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-6">
+                                                <h6 class="font-bold special-before">شیرآلات چشمی</h6>
+                                                <ul class="m-0 p-0 list-unstyled lh-lg">
+                                                    <li class="py-1"><a class="text-secondary">شیر فلکه کشویی</a></li>
+                                                    <li class="py-1"><a class="text-secondary">شیر سوپاپی</a></li>
+                                                    <li class="py-1"><a class="text-secondary">شیر یک طرفه</a></li>
+                                                    <li class="py-1"><a class="text-secondary">شیر صافی چدنی</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-6">
+                                                <h6 class="font-bold special-before">شیرآلات اهرمی</h6>
+                                                <ul class="m-0 p-0 list-unstyled lh-lg">
+                                                    <li class="py-1"><a class="text-secondary">شیر فلکه کشویی</a></li>
+                                                    <li class="py-1"><a class="text-secondary">شیر سوپاپی</a></li>
+                                                    <li class="py-1"><a class="text-secondary">شیر یک طرفه</a></li>
+                                                    <li class="py-1"><a class="text-secondary">شیر صافی چدنی</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-6">
+                                                <h6 class="font-bold special-before">شیرآلات مدل</h6>
+                                                <ul class="m-0 p-0 list-unstyled lh-lg">
+                                                    <li class="py-1"><a class="text-secondary">شیر فلکه کشویی</a></li>
+                                                    <li class="py-1"><a class="text-secondary">شیر سوپاپی</a></li>
+                                                    <li class="py-1"><a class="text-secondary">شیر یک طرفه</a></li>
+                                                    <li class="py-1"><a class="text-secondary">شیر صافی چدنی</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="brands.html">
+                                لیست قیمت ها
+                            </a>
+                        </li>
+                        <li>
+                            <a>
+                                فروشگاه
+                            </a>
+                        </li>
+                        <li>
+                            <a href="blog.html">
+                                بلاگ
+                            </a>
+                        </li>
+                        <li>
+                            <a>
+                                درباره ما
+                            </a>
+                        </li>
+                        <!-- contact -->
+                        <a class="d-md-none d-flex text-secondary fs-7 align-items-center gap-2 font-bold">
+                            <div>
+                                <p class="mb-0">09124566784</p>
+                                <p class="mb-0 fs-8">پشتیبانی سریع</p>
+                            </div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                <path
+                                    d="M12.75,13.75l-.147.735a.75.75,0,0,0,.818-.4Zm-7-7-.335-.671a.75.75,0,0,0-.4.818ZM6.1,6.573l.335.671h0Zm.963-2.532.7-.279h0ZM6.253,2.007l-.7.279h0Zm11.24,11.24-.279.7h0Zm-2.034-.814.279-.7h0Zm-2.532.962.671.335h0ZM14,8.75a.75.75,0,0,0,1.5,0Zm.446-1.531.693-.287h0ZM12.281,5.054l.287-.693h0ZM10.75,4a.75.75,0,0,0,0,1.5ZM18,8.75a.75.75,0,0,0,1.5,0Zm.141-3.061.693-.287h0Zm-4.33-4.33L14.1.666h0ZM10.75,0a.75.75,0,0,0,0,1.5ZM18,15.1V16.75h1.5V15.1ZM2.75,1.5H4.4V0H2.75Zm10,12.25c.147-.735.147-.735.148-.735h0l-.014,0L12.816,13c-.061-.015-.156-.039-.276-.075a9,9,0,0,1-.994-.361A8.865,8.865,0,0,1,8.78,10.72L7.72,11.78a10.367,10.367,0,0,0,3.235,2.159,10.465,10.465,0,0,0,1.162.421c.145.043.262.073.345.093l.1.023.029.006.009,0h0s0,0,.148-.735ZM8.78,10.72A8.867,8.867,0,0,1,6.939,7.955a8.99,8.99,0,0,1-.36-.994c-.035-.121-.06-.215-.075-.276-.007-.031-.013-.053-.016-.067l0-.014v0h0L5.75,6.75,5.015,6.9h0v0l0,.009.006.029c.005.024.013.057.023.1.02.083.051.2.093.345a10.488,10.488,0,0,0,.421,1.162A10.365,10.365,0,0,0,7.72,11.78Zm-2.695-3.3.354-.177L5.769,5.9l-.354.177ZM7.763,3.763,6.949,1.729l-1.393.557L6.37,4.32Zm10.008,8.788-2.034-.814L15.18,13.13l2.034.814Zm-5.515.51-.177.354,1.342.671.177-.354Zm3.481-1.324a2.75,2.75,0,0,0-3.481,1.323l1.342.671a1.25,1.25,0,0,1,1.582-.6Zm-9.3-4.493A2.75,2.75,0,0,0,7.763,3.763L6.37,4.32a1.25,1.25,0,0,1-.6,1.582ZM4.4,1.5a1.25,1.25,0,0,1,1.161.786l1.393-.557A2.75,2.75,0,0,0,4.4,0ZM19.5,15.1a2.75,2.75,0,0,0-1.729-2.553l-.557,1.393A1.25,1.25,0,0,1,18,15.1ZM16.75,18A15.25,15.25,0,0,1,1.5,2.75H0A16.75,16.75,0,0,0,16.75,19.5Zm0,1.5a2.75,2.75,0,0,0,2.75-2.75H18A1.25,1.25,0,0,1,16.75,18ZM1.5,2.75A1.25,1.25,0,0,1,2.75,1.5V0A2.75,2.75,0,0,0,0,2.75Zm14,6a4.75,4.75,0,0,0-.362-1.818l-1.386.574A3.251,3.251,0,0,1,14,8.75Zm-.362-1.818a4.751,4.751,0,0,0-1.03-1.541L13.048,6.452a3.249,3.249,0,0,1,.7,1.054Zm-1.03-1.541a4.751,4.751,0,0,0-1.541-1.03l-.574,1.386a3.25,3.25,0,0,1,1.054.7Zm-1.541-1.03A4.749,4.749,0,0,0,10.75,4V5.5a3.25,3.25,0,0,1,1.244.247ZM19.5,8.75A8.749,8.749,0,0,0,18.834,5.4l-1.386.574A7.249,7.249,0,0,1,18,8.75ZM18.834,5.4a8.75,8.75,0,0,0-1.9-2.839L15.877,3.623a7.25,7.25,0,0,1,1.572,2.352Zm-1.9-2.839A8.75,8.75,0,0,0,14.1.666l-.574,1.386a7.25,7.25,0,0,1,2.352,1.572ZM14.1.666A8.75,8.75,0,0,0,10.75,0V1.5a7.251,7.251,0,0,1,2.774.552Z"
+                                    transform="translate(2.25 2.25)" fill="#a35151" />
+                            </svg>
+                        </a>
+                    </ul>
+                </nav>
+                <!-- contact -->
+                <a class="d-md-flex d-none text-secondary fs-7 align-items-center gap-2 font-bold">
+                    <div>
+                        <p class="mb-0">09124566784</p>
+                        <p class="mb-0 fs-8">پشتیبانی سریع</p>
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path
+                            d="M12.75,13.75l-.147.735a.75.75,0,0,0,.818-.4Zm-7-7-.335-.671a.75.75,0,0,0-.4.818ZM6.1,6.573l.335.671h0Zm.963-2.532.7-.279h0ZM6.253,2.007l-.7.279h0Zm11.24,11.24-.279.7h0Zm-2.034-.814.279-.7h0Zm-2.532.962.671.335h0ZM14,8.75a.75.75,0,0,0,1.5,0Zm.446-1.531.693-.287h0ZM12.281,5.054l.287-.693h0ZM10.75,4a.75.75,0,0,0,0,1.5ZM18,8.75a.75.75,0,0,0,1.5,0Zm.141-3.061.693-.287h0Zm-4.33-4.33L14.1.666h0ZM10.75,0a.75.75,0,0,0,0,1.5ZM18,15.1V16.75h1.5V15.1ZM2.75,1.5H4.4V0H2.75Zm10,12.25c.147-.735.147-.735.148-.735h0l-.014,0L12.816,13c-.061-.015-.156-.039-.276-.075a9,9,0,0,1-.994-.361A8.865,8.865,0,0,1,8.78,10.72L7.72,11.78a10.367,10.367,0,0,0,3.235,2.159,10.465,10.465,0,0,0,1.162.421c.145.043.262.073.345.093l.1.023.029.006.009,0h0s0,0,.148-.735ZM8.78,10.72A8.867,8.867,0,0,1,6.939,7.955a8.99,8.99,0,0,1-.36-.994c-.035-.121-.06-.215-.075-.276-.007-.031-.013-.053-.016-.067l0-.014v0h0L5.75,6.75,5.015,6.9h0v0l0,.009.006.029c.005.024.013.057.023.1.02.083.051.2.093.345a10.488,10.488,0,0,0,.421,1.162A10.365,10.365,0,0,0,7.72,11.78Zm-2.695-3.3.354-.177L5.769,5.9l-.354.177ZM7.763,3.763,6.949,1.729l-1.393.557L6.37,4.32Zm10.008,8.788-2.034-.814L15.18,13.13l2.034.814Zm-5.515.51-.177.354,1.342.671.177-.354Zm3.481-1.324a2.75,2.75,0,0,0-3.481,1.323l1.342.671a1.25,1.25,0,0,1,1.582-.6Zm-9.3-4.493A2.75,2.75,0,0,0,7.763,3.763L6.37,4.32a1.25,1.25,0,0,1-.6,1.582ZM4.4,1.5a1.25,1.25,0,0,1,1.161.786l1.393-.557A2.75,2.75,0,0,0,4.4,0ZM19.5,15.1a2.75,2.75,0,0,0-1.729-2.553l-.557,1.393A1.25,1.25,0,0,1,18,15.1ZM16.75,18A15.25,15.25,0,0,1,1.5,2.75H0A16.75,16.75,0,0,0,16.75,19.5Zm0,1.5a2.75,2.75,0,0,0,2.75-2.75H18A1.25,1.25,0,0,1,16.75,18ZM1.5,2.75A1.25,1.25,0,0,1,2.75,1.5V0A2.75,2.75,0,0,0,0,2.75Zm14,6a4.75,4.75,0,0,0-.362-1.818l-1.386.574A3.251,3.251,0,0,1,14,8.75Zm-.362-1.818a4.751,4.751,0,0,0-1.03-1.541L13.048,6.452a3.249,3.249,0,0,1,.7,1.054Zm-1.03-1.541a4.751,4.751,0,0,0-1.541-1.03l-.574,1.386a3.25,3.25,0,0,1,1.054.7Zm-1.541-1.03A4.749,4.749,0,0,0,10.75,4V5.5a3.25,3.25,0,0,1,1.244.247ZM19.5,8.75A8.749,8.749,0,0,0,18.834,5.4l-1.386.574A7.249,7.249,0,0,1,18,8.75ZM18.834,5.4a8.75,8.75,0,0,0-1.9-2.839L15.877,3.623a7.25,7.25,0,0,1,1.572,2.352Zm-1.9-2.839A8.75,8.75,0,0,0,14.1.666l-.574,1.386a7.25,7.25,0,0,1,2.352,1.572ZM14.1.666A8.75,8.75,0,0,0,10.75,0V1.5a7.251,7.251,0,0,1,2.774.552Z"
+                            transform="translate(2.25 2.25)" fill="#a35151" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+        <!-- chat -->
+        <a id="support"
+            class="main-bg position-fixed bottom-20 mb-5 me-5 w-66 text-white h-66 d-flex align-items-center justify-content-center rounded-circle">
+            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-headset"
+                viewBox="0 0 16 16">
+                <path
+                    d="M8 1a5 5 0 0 0-5 5v1h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a6 6 0 1 1 12 0v6a2.5 2.5 0 0 1-2.5 2.5H9.366a1 1 0 0 1-.866.5h-1a1 1 0 1 1 0-2h1a1 1 0 0 1 .866.5H11.5A1.5 1.5 0 0 0 13 12h-1a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h1V6a5 5 0 0 0-5-5z" />
+            </svg>
+        </a>
+    </header>
+
+    <!-- main -->
+
+    <main>
+
+        <!-- breadcrumb -->
+        <section class="container loading">
+            <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb"
+                class="my-3 top shadow-sm rounded-3 fs-7 p-2 bg-white">
+                <ol class="breadcrumb m-0 p-0">
+                    <li class="breadcrumb-item"><a class="second-text font-bold" href="index.html">صفحه اصلی</a></li>
+                    <li class="breadcrumb-item"><a class="second-text font-bold" href="blog.html">بلاگ</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">با شیرآلات خانه ای مدرن و لوکس بسازیم</li>
+                </ol>
+            </nav>
+        </section>
+
+        <!-- blog -->
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 pe-lg-0">
+                        <!-- blog details -->
+                        <div class="shadow-sm rounded-3 pt-3 pb-5 bottom bg-white loading">
+                            <h4 class="font-bold text-dark pe-3">با شیرآلات خانه ای مدرن و لوکس بسازیم!</h4>
+                            <div class="d-flex flex-wrap align-items-center gap-4 mt-3 px-3">
+                                <!-- points -->
+                                <div class="d-flex align-items-center gap-3">
+                                    <div class="d-flex align-items-center gap-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                            fill="currentColor" class="bi bi-star-half text-warning"
+                                            viewBox="0 0 16 16">
+                                            <path
+                                                d="M5.354 5.119 7.538.792A.516.516 0 0 1 8 .5c.183 0 .366.097.465.292l2.184 4.327 4.898.696A.537.537 0 0 1 16 6.32a.548.548 0 0 1-.17.445l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256a.52.52 0 0 1-.146.05c-.342.06-.668-.254-.6-.642l.83-4.73L.173 6.765a.55.55 0 0 1-.172-.403.58.58 0 0 1 .085-.302.513.513 0 0 1 .37-.245l4.898-.696zM8 12.027a.5.5 0 0 1 .232.056l3.686 1.894-.694-3.957a.565.565 0 0 1 .162-.505l2.907-2.77-4.052-.576a.525.525 0 0 1-.393-.288L8.001 2.223 8 2.226v9.8z" />
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                            fill="currentColor" class="bi bi-star-fill text-warning"
+                                            viewBox="0 0 16 16">
+                                            <path
+                                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                            fill="currentColor" class="bi bi-star-fill text-warning"
+                                            viewBox="0 0 16 16">
+                                            <path
+                                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                            fill="currentColor" class="bi bi-star-fill text-warning"
+                                            viewBox="0 0 16 16">
+                                            <path
+                                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                            fill="currentColor" class="bi bi-star-fill text-warning"
+                                            viewBox="0 0 16 16">
+                                            <path
+                                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                        </svg>
+                                    </div>
+                                    <p class="mb-0 text-secondary fw-bold">4/5</p>
+                                </div>
+                                <!-- category -->
+                                <div class="d-flex align-items-center gap-1 me-0 me-md-auto me-lg-0">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="21.497" height="19.5" viewBox="0 0 21.497 19.5"><defs><style>.a{fill:#777474;}</style></defs><path class="a" d="M20.438,10.908l-.649-.375h0Zm-3.267,5.658-.649-.375h0ZM5.021,10.172l.69.295h0ZM1.143,17.33a.75.75,0,1,0,1.379.59ZM9.829,2.536l-.39.64h0ZM7.66,1.214l.39-.64h0ZM1.5,15.375V4.125H0v11.25ZM11.473,3.75h3.354V2.25H11.473ZM4,1.5H6.017V0H4ZM17.325,6.375V7.5h1.5V6.375ZM8.979,8.25h9.1V6.75h-9.1Zm9.1,0h.506V6.75h-.506Zm1.714,2.283L16.521,16.19l1.3.75,3.267-5.658ZM13.457,18H4v1.5h9.459ZM4.331,9.877,1.143,17.33l1.379.59L5.71,10.467ZM10.219,1.9,8.051.574,7.27,1.854,9.438,3.176Zm6.3,14.295A3.551,3.551,0,0,1,13.457,18v1.5a5.05,5.05,0,0,0,4.363-2.56Zm2.06-7.94a1.5,1.5,0,0,1,1.208,2.283l1.3.75A3,3,0,0,0,18.581,6.75Zm-9.6-1.5A5.077,5.077,0,0,0,4.331,9.877l1.379.59A3.578,3.578,0,0,1,8.979,8.25ZM6.017,1.5a2.406,2.406,0,0,1,1.254.354L8.051.574A3.906,3.906,0,0,0,6.017,0Zm8.81,2.25a2.564,2.564,0,0,1,2.5,2.625h1.5a4.063,4.063,0,0,0-4-4.125Zm-3.354-1.5A2.406,2.406,0,0,1,10.219,1.9L9.438,3.176a3.906,3.906,0,0,0,2.034.574ZM1.5,4.125A2.564,2.564,0,0,1,4,1.5V0A4.063,4.063,0,0,0,0,4.125ZM0,15.375A4.063,4.063,0,0,0,4,19.5V18a2.564,2.564,0,0,1-2.5-2.625Z"/></svg>
+                                    <p class="mb-0 text-secondary fw-bold fs-7">شیرآلات</p>
+                                </div>
+                                <!-- calander -->
+                                <div class="d-flex align-items-center gap-1 text-secondary">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5m-9-6h.008v.008H12v-.008zM12 15h.008v.008H12V15zm0 2.25h.008v.008H12v-.008zM9.75 15h.008v.008H9.75V15zm0 2.25h.008v.008H9.75v-.008zM7.5 15h.008v.008H7.5V15zm0 2.25h.008v.008H7.5v-.008zm6.75-4.5h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008V15zm0 2.25h.008v.008h-.008v-.008zm2.25-4.5h.008v.008H16.5v-.008zm0 2.25h.008v.008H16.5V15z" />
+                                      </svg>
+                                      
+                                    <p class="mb-0 fw-bold fs-7">19 مرداد 1402</p>
+                                </div>
+                            </div>
+                            <img alt="blog" src="assets/img/blog.PNG" class="w-100 mt-3">
+                            <p class="lh-lg p-3">
+                                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک
+                                است،
+                                چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی
+                                تکنولوژی
+                                مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت
+                                و سه
+                                درصد
+                            </p>
+                            <p class="lh-lg p-3">
+                                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک
+                                است،
+                                چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی
+                                تکنولوژی
+                                مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت
+                                و سه
+                                درصد
+                            </p>
+                        </div>
+                        <div>
+                            <!-- tags -->
+                            <div class="top shadow-sm bg-white rounded-3 fs-7 p-2 mt-3 loading">
+                                <div class="d-flex align-items-center gap-2">
+                                    <div class="d-flex align-items-center gap-1 text-secondary">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                            fill="currentColor" class="bi bi-tags-fill" viewBox="0 0 16 16">
+                                            <path
+                                                d="M2 2a1 1 0 0 1 1-1h4.586a1 1 0 0 1 .707.293l7 7a1 1 0 0 1 0 1.414l-4.586 4.586a1 1 0 0 1-1.414 0l-7-7A1 1 0 0 1 2 6.586V2zm3.5 4a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+                                            <path
+                                                d="M1.293 7.793A1 1 0 0 1 1 7.086V2a1 1 0 0 0-1 1v4.586a1 1 0 0 0 .293.707l7 7a1 1 0 0 0 1.414 0l.043-.043-7.457-7.457z" />
+                                        </svg>
+                                        <p class="mb-0 font-bold">برچسب ها:</p>
+                                    </div>
+                                    <div class="d-flex align-items-center gap-2 flex-wrap text-secondary fw-bold">
+                                        <span class="bg-gray rounded-3 py-1 px-2">شیرآلات</span>
+                                        <span class="bg-gray rounded-3 py-1 px-2">پوش فیت</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- faq -->
+                            <div class="loading">
+                                <p
+                                    class="text-white mb-0 mt-4 font-bold main-bg py-2 px-3 text-center w-180 title-rounded">
+                                    برخی سوالات رایج</p>
+                                <div class="top shadow-sm bg-white rounded-3 fs-7 px-2 py-3 mt-3">
+                                    <h6 class="font-bold text-dark">شیرآلات مدرن خانگی چند نوع دارد؟</h6>
+                                    <p class="text-secondary fw-bold fs-7 mt-4">
+                                        شیرآلات مغزی دار یا کارتریجی / شیرآلات توپی / شیرآلات سرامیکی / شیرآلات سنسوردار
+                                    </p>
+                                </div>
+                                <div class="top shadow-sm bg-white rounded-3 fs-7 px-2 py-3 mt-3">
+                                    <h6 class="font-bold text-dark">شیرآلات مدرن خانگی چند نوع دارد؟</h6>
+                                    <p class="text-secondary fw-bold fs-7 mt-4">
+                                        شیرآلات مغزی دار یا کارتریجی / شیرآلات توپی / شیرآلات سرامیکی / شیرآلات سنسوردار
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- comments -->
+                            <div class="loading">
+                                <p
+                                    class="text-white mb-0 mt-4 font-bold main-bg py-2 px-3 text-center w-180 title-rounded">
+                                    دیدگاه</p>
+                                    <form class="loading">
+                                        <input placeholder="نام خود را بنویسید"
+                                            class="border rounded-3 form-control mt-3">
+                                        <input type="email" placeholder="ایمیل خود را وارد کنید"
+                                            class="border rounded-3 form-control mt-3">
+                                        <textarea rows="6"
+                                            class="form-control border rounded-3 mt-3" placeholder="دیدگاه خود را وارد کنید"></textarea>
+                                        <input value="ارسال دیدگاه"
+                                            class="main-bg btn text-white border-0 mt-3 w-100 rounded-3 py-2 font-bold text-center">
+                                    </form>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- sidebar -->
+                    <div class="col-lg-4 ps-lg-0">
+                        <!-- blog search -->
+                        <div class="top shadow-sm bg-white mt-4 mt-lg-0 rounded-3 fs-7 px-2 py-3 loading">
+                            <h5 class="font-bold main-text border-bottom pb-3">جستجو در مقالات</h5>
+                            <div class="border rounded-3 d-flex align-items-center px-3 justify-content-between mt-3">
+                                <input class="flex-grow-1 border-0 outline-none py-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="20" width="20" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"></path>
+                                  </svg>
+                            </div>
+                        </div>
+                        <!-- ads -->
+                        <div class="loading">
+                            <img alt="ads" src="assets/img/advertisement.png" class="img-fluid mt-3">
+                        </div>
+                        <!-- blog category -->
+                        <div class="top shadow-sm bg-white rounded-3 fs-7 px-3 pt-3 pb-5 mt-3 loading">
+                            <h5 class="font-bold main-text border-bottom pb-3">دسته بندی مقالات</h5>
+                            <ul class="m-0 p-0 list-unstyled mt-3">
+                                <li class="mb-3">
+                                    <a class="d-flex align-items-center gap-2">
+                                        <img alt="cat" src="assets/img/cat-icon.png" class="w-6">
+                                        <p class="mb-0 text-secondary font-bold fs-6">لوله آب (23)</p>
+                                    </a>
+                                </li>
+                                <li class="mb-3">
+                                    <a class="d-flex align-items-center gap-2">
+                                        <img alt="cat" src="assets/img/cat-icon.png" class="w-6">
+                                        <p class="mb-0 text-secondary font-bold fs-6">شیرآلات (20)</p>
+                                    </a>
+                                </li>
+                                <li class="mb-3">
+                                    <a class="d-flex align-items-center gap-2">
+                                        <img alt="cat" src="assets/img/cat-icon.png" class="w-6">
+                                        <p class="mb-0 text-secondary font-bold fs-6">پوش فیت (33)</p>
+                                    </a>
+                                </li>
+                                <li class="mb-3">
+                                    <a class="d-flex align-items-center gap-2">
+                                        <img alt="cat" src="assets/img/cat-icon.png" class="w-6">
+                                        <p class="mb-0 text-secondary font-bold fs-6">سه راهی (33)</p>
+                                    </a>
+                                </li>
+                                <li class="mb-3">
+                                    <a class="d-flex align-items-center gap-2">
+                                        <img alt="cat" src="assets/img/cat-icon.png" class="w-6">
+                                        <p class="mb-0 text-secondary font-bold fs-6">مهره و ماسوره (33)</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <!-- banner2 -->
+        <section class="bottom my-5 banner2">
+            <div class="container">
+                <div class="d-flex flex-column flex-md-row align-items-center gap-md-5 gap-2 justify-content-between">
+                    <a class="d-block flex-grow-1 w-50 loading mb-2">
+                        <img alt="banner2" src="assets/img/address.png" class="img-fluid">
+                    </a>
+                    <a class="d-block flex-grow-1 w-50 loading">
+                        <img alt="banner2" src="assets/img/moshavere.png" class="img-fluid">
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- blog -->
+        <section class="blog my-5">
+            <div class="container">
+                <!-- title -->
+                <div class="d-flex align-items-center loading justify-content-between justify-content-md-end bottom">
+                    <p class="text-white mb-0 font-bold second-bg py-2 px-3 text-center w-180 title-rounded">مقالات
+                        مرتبط</p>
+                    <span class="title-line d-none d-md-block"></span>
+                </div>
+                <!-- blog list -->
+                <div class="swiper blog mt-5 top p-2">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide bg-white loading rounded-4 overflow-hidden shadow-sm">
+                            <div class="rounded-3 shadow-sm overflow-hidden">
+                                <div>
+                                    <img alt="blog" src="assets/img/2.png" class="img-fluid">
+                                </div>
+                                <div class="p-2 position-relative">
+                                    <a class="main-text font-bold my-3 d-table fs-6">با شیرآلات خانه ای مدرن و لوکس
+                                        بسازیم</a>
+                                    <div class="text-secondary d-flex align-items-center gap-1 mt-4">
+                                       <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5m-9-6h.008v.008H12v-.008zM12 15h.008v.008H12V15zm0 2.25h.008v.008H12v-.008zM9.75 15h.008v.008H9.75V15zm0 2.25h.008v.008H9.75v-.008zM7.5 15h.008v.008H7.5V15zm0 2.25h.008v.008H7.5v-.008zm6.75-4.5h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008V15zm0 2.25h.008v.008h-.008v-.008zm2.25-4.5h.008v.008H16.5v-.008zm0 2.25h.008v.008H16.5V15z"></path>
+                                      </svg>
+                                        <p class="mb-0 fw-bold fs-7">19 مرداد 1402</p>
+                                    </div>
+                                    <a
+                                        class="d-flex start-0 mt-16 ml-6 px-3 py-1 align-items-center text-white justify-content-center title-rounded position-absolute main-bg">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide bg-white loading rounded-4 overflow-hidden shadow-sm">
+                            <div class="rounded-3 shadow-sm overflow-hidden">
+                                <div>
+                                    <img alt="blog" src="assets/img/4-72.png" class="img-fluid">
+                                </div>
+                                <div class="p-2 position-relative">
+                                    <a class="main-text font-bold my-3 d-table fs-6">مزیت لوله های پی وی سی</a>
+                                    <div class="text-secondary d-flex align-items-center gap-1 mt-4">
+                                       <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5m-9-6h.008v.008H12v-.008zM12 15h.008v.008H12V15zm0 2.25h.008v.008H12v-.008zM9.75 15h.008v.008H9.75V15zm0 2.25h.008v.008H9.75v-.008zM7.5 15h.008v.008H7.5V15zm0 2.25h.008v.008H7.5v-.008zm6.75-4.5h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008V15zm0 2.25h.008v.008h-.008v-.008zm2.25-4.5h.008v.008H16.5v-.008zm0 2.25h.008v.008H16.5V15z"></path>
+                                      </svg>
+                                        <p class="mb-0 fw-bold fs-7">19 مرداد 1402</p>
+                                    </div>
+                                    <a
+                                        class="d-flex start-0 mt-16 ml-6 px-3 py-1 align-items-center text-white justify-content-center title-rounded position-absolute main-bg">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide bg-white loading rounded-4 overflow-hidden shadow-sm">
+                            <div class="rounded-3 shadow-sm overflow-hidden">
+                                <div>
+                                    <img alt="blog" src="assets/img/2.png" class="img-fluid">
+                                </div>
+                                <div class="p-2 position-relative">
+                                    <a class="main-text font-bold my-3 d-table fs-6">با شیرآلات خانه ای مدرن و لوکس
+                                        بسازیم</a>
+                                    <div class="text-secondary d-flex align-items-center gap-1 mt-4">
+                                       <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5m-9-6h.008v.008H12v-.008zM12 15h.008v.008H12V15zm0 2.25h.008v.008H12v-.008zM9.75 15h.008v.008H9.75V15zm0 2.25h.008v.008H9.75v-.008zM7.5 15h.008v.008H7.5V15zm0 2.25h.008v.008H7.5v-.008zm6.75-4.5h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008V15zm0 2.25h.008v.008h-.008v-.008zm2.25-4.5h.008v.008H16.5v-.008zm0 2.25h.008v.008H16.5V15z"></path>
+                                      </svg>
+                                        <p class="mb-0 fw-bold fs-7">19 مرداد 1402</p>
+                                    </div>
+                                    <a
+                                        class="d-flex start-0 mt-16 ml-6 px-3 py-1 align-items-center text-white justify-content-center title-rounded position-absolute main-bg">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide bg-white loading rounded-4 overflow-hidden shadow-sm">
+                            <div class="rounded-3 shadow-sm overflow-hidden">
+                                <div>
+                                    <img alt="blog" src="assets/img/4-72.png" class="img-fluid">
+                                </div>
+                                <div class="p-2 position-relative">
+                                    <a class="main-text font-bold my-3 d-table fs-6">مزیت لوله های پی وی سی</a>
+                                    <div class="text-secondary d-flex align-items-center gap-1 mt-4">
+                                       <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5m-9-6h.008v.008H12v-.008zM12 15h.008v.008H12V15zm0 2.25h.008v.008H12v-.008zM9.75 15h.008v.008H9.75V15zm0 2.25h.008v.008H9.75v-.008zM7.5 15h.008v.008H7.5V15zm0 2.25h.008v.008H7.5v-.008zm6.75-4.5h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008V15zm0 2.25h.008v.008h-.008v-.008zm2.25-4.5h.008v.008H16.5v-.008zm0 2.25h.008v.008H16.5V15z"></path>
+                                      </svg>
+                                        <p class="mb-0 fw-bold fs-7">19 مرداد 1402</p>
+                                    </div>
+                                    <a
+                                        class="d-flex start-0 mt-16 ml-6 px-3 py-1 align-items-center text-white justify-content-center title-rounded position-absolute main-bg">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- footer -->
+
+    <footer class="loading position-relative">
+        <div class="container">
+            <a href="#header" class=" main-bg text-white rounded-3 d-block text-center pt-1 me-auto w-33 h-33">
+                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="none" viewBox="0 0 24 24"
+                    stroke-width="1.5" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15.75l7.5-7.5 7.5 7.5" />
+                </svg>
+            </a>
+            <div class="row g-4">
+                <div class="col-lg-4 main-text">
+                    <h3 class="font-bold mb-3">فروشگاه برادران محمدی</h3>
+                    <p class="lh-lg">
+                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است،
+                        چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی
+                        مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه
+                        درصد
+                    </p>
+                    <div class="d-lg-flex d-none align-items-center justify-content-between gap-3">
+                        <a class="d-block border rounded-4 overflow-hidden">
+                            <img alt="namad" class="img-fluid" src="assets/img/enamad1.jpg">
+                        </a>
+                        <a class="d-block border rounded-4 overflow-hidden">
+                            <img alt="namad" class="img-fluid" src="assets/img/enamad2.jpg">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <!-- menu -->
+                    <h6 class="text-white mx-auto font-bold second-bg py-2 w-120 text-center title-rounded">لینک ها</h6>
+                    <ul class="p-0 m-0 list-unstyled lh-lg mt-3 text-center fw-bold">
+                        <li><a class="d-block text-secondary cursor">لیست قیمت ها</a></li>
+                        <li><a href="brands.html" class="d-block text-secondary cursor">برندها</a></li>
+                        <li><a class="d-block text-secondary cursor">بلاگ</a></li>
+                        <li><a class="d-block text-secondary cursor">درباره ما</a></li>
+                        <!-- contact -->
+                        <a
+                            class="d-flex d-lg-none mt-3 text-secondary fs-6 align-items-center justify-content-center gap-2 font-bold">
+                            <div>
+                                <p class="mb-0">09124566784</p>
+                                <p class="mb-0 fs-7">پشتیبانی سریع</p>
+                            </div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24">
+                                <path
+                                    d="M12.75,13.75l-.147.735a.75.75,0,0,0,.818-.4Zm-7-7-.335-.671a.75.75,0,0,0-.4.818ZM6.1,6.573l.335.671h0Zm.963-2.532.7-.279h0ZM6.253,2.007l-.7.279h0Zm11.24,11.24-.279.7h0Zm-2.034-.814.279-.7h0Zm-2.532.962.671.335h0ZM14,8.75a.75.75,0,0,0,1.5,0Zm.446-1.531.693-.287h0ZM12.281,5.054l.287-.693h0ZM10.75,4a.75.75,0,0,0,0,1.5ZM18,8.75a.75.75,0,0,0,1.5,0Zm.141-3.061.693-.287h0Zm-4.33-4.33L14.1.666h0ZM10.75,0a.75.75,0,0,0,0,1.5ZM18,15.1V16.75h1.5V15.1ZM2.75,1.5H4.4V0H2.75Zm10,12.25c.147-.735.147-.735.148-.735h0l-.014,0L12.816,13c-.061-.015-.156-.039-.276-.075a9,9,0,0,1-.994-.361A8.865,8.865,0,0,1,8.78,10.72L7.72,11.78a10.367,10.367,0,0,0,3.235,2.159,10.465,10.465,0,0,0,1.162.421c.145.043.262.073.345.093l.1.023.029.006.009,0h0s0,0,.148-.735ZM8.78,10.72A8.867,8.867,0,0,1,6.939,7.955a8.99,8.99,0,0,1-.36-.994c-.035-.121-.06-.215-.075-.276-.007-.031-.013-.053-.016-.067l0-.014v0h0L5.75,6.75,5.015,6.9h0v0l0,.009.006.029c.005.024.013.057.023.1.02.083.051.2.093.345a10.488,10.488,0,0,0,.421,1.162A10.365,10.365,0,0,0,7.72,11.78Zm-2.695-3.3.354-.177L5.769,5.9l-.354.177ZM7.763,3.763,6.949,1.729l-1.393.557L6.37,4.32Zm10.008,8.788-2.034-.814L15.18,13.13l2.034.814Zm-5.515.51-.177.354,1.342.671.177-.354Zm3.481-1.324a2.75,2.75,0,0,0-3.481,1.323l1.342.671a1.25,1.25,0,0,1,1.582-.6Zm-9.3-4.493A2.75,2.75,0,0,0,7.763,3.763L6.37,4.32a1.25,1.25,0,0,1-.6,1.582ZM4.4,1.5a1.25,1.25,0,0,1,1.161.786l1.393-.557A2.75,2.75,0,0,0,4.4,0ZM19.5,15.1a2.75,2.75,0,0,0-1.729-2.553l-.557,1.393A1.25,1.25,0,0,1,18,15.1ZM16.75,18A15.25,15.25,0,0,1,1.5,2.75H0A16.75,16.75,0,0,0,16.75,19.5Zm0,1.5a2.75,2.75,0,0,0,2.75-2.75H18A1.25,1.25,0,0,1,16.75,18ZM1.5,2.75A1.25,1.25,0,0,1,2.75,1.5V0A2.75,2.75,0,0,0,0,2.75Zm14,6a4.75,4.75,0,0,0-.362-1.818l-1.386.574A3.251,3.251,0,0,1,14,8.75Zm-.362-1.818a4.751,4.751,0,0,0-1.03-1.541L13.048,6.452a3.249,3.249,0,0,1,.7,1.054Zm-1.03-1.541a4.751,4.751,0,0,0-1.541-1.03l-.574,1.386a3.25,3.25,0,0,1,1.054.7Zm-1.541-1.03A4.749,4.749,0,0,0,10.75,4V5.5a3.25,3.25,0,0,1,1.244.247ZM19.5,8.75A8.749,8.749,0,0,0,18.834,5.4l-1.386.574A7.249,7.249,0,0,1,18,8.75ZM18.834,5.4a8.75,8.75,0,0,0-1.9-2.839L15.877,3.623a7.25,7.25,0,0,1,1.572,2.352Zm-1.9-2.839A8.75,8.75,0,0,0,14.1.666l-.574,1.386a7.25,7.25,0,0,1,2.352,1.572ZM14.1.666A8.75,8.75,0,0,0,10.75,0V1.5a7.251,7.251,0,0,1,2.774.552Z"
+                                    transform="translate(2.25 2.25)" fill="#a35151"></path>
+                            </svg>
+                        </a>
+                    </ul>
+                    <!-- social -->
+                    <div class="mt-3 mt-lg-5">
+                        <a class="d-block mb-3"><img class="w-240 mx-auto d-block" alt="social"
+                                src="assets/img/telegram.png"></a>
+                        <a class="d-block"><img class="w-240 mx-auto d-block" alt="social"
+                                src="assets/img/insta.png"></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 position-relative">
+                    <div class="d-flex d-lg-none align-items-center mb-5 justify-content-center gap-3">
+                        <a class="d-block border rounded-4 overflow-hidden">
+                            <img alt="namad" class="img-fluid" src="assets/img/enamad1.jpg">
+                        </a>
+                        <a class="d-block border rounded-4 overflow-hidden">
+                            <img alt="namad" class="img-fluid" src="assets/img/enamad2.jpg">
+                        </a>
+                    </div>
+                    <div
+                        class="d-flex align-items-center justify-content-center footer-persons position-absolute right-13">
+                        <img alt="footer" src="assets/img/Mask Group 4.png" class="img-fluid ml-207">
+                        <img alt="footer" src="assets/img/Mask Group 3.png" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- copy right -->
+        <div class="bg-dark text-white text-center py-3 mt-4">
+            <p class="mb-0 container">تمامی حقوق مادی و معنوی این سایت فروشگاه لوله و اتصالات
+                برادران محمدی می باشد. | <a class="font-bold text-white">طراحی توسط الیتیست</a></p>
+        </div>
+    </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="assets/js/swiper.min.js"></script>
+    <script src="assets/js/scrollreveal.min.js"></script>
+    <script src="assets/js/scripts.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
